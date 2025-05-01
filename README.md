@@ -31,6 +31,24 @@ PC Collector is a software project that allows you to build and manage configura
 
 4. Build and run the project.
 
+## TypeScript Compilation and Execution
+
+### 1. Compile TypeScript to JavaScript
+To compile the TypeScript files in the project to JavaScript, use the following command:
+
+```bash
+npx tsc
+```
+
+### 2. Run the compiled JavaScript files
+Once the TypeScript files are compiled, you can run the generated JavaScript files with Node.js:
+
+```bash
+node dist/index.js
+```
+
+Replace `index.js` with the entry point JavaScript file if it's different.
+
 ## Usage
 
 You can use the **Director** class to construct different types of computers by providing the builder. Here's an example:
@@ -50,7 +68,3 @@ const gamingPC = director.constructGamingPC();
 director.setBuilder(new OfficePCBuilder());
 const officePC = director.constructOfficePC();
 ```
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
